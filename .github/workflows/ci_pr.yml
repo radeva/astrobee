@@ -17,6 +17,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: lscpu
+        run: lscpu
+
       - name: Checkout submodule
         run: git submodule update --init --depth 1 description/media
 
@@ -32,6 +35,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: lscpu
+        run: lscpu
+
       - name: Checkout submodule
         run: git submodule update --init --depth 1 description/media
 
@@ -46,6 +52,9 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
+      - name: lscpu
+        run: lscpu
 
       - name: Checkout submodule
         run: git submodule update --init --depth 1 description/media
